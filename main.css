@@ -1,0 +1,275 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*general styling*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*main-container*/
+.main-container {
+    width: 100%;
+    height: 657.5px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(https://hnguye.github.io/apple-2012-clone/images/background.jpg);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+/*navigation bar*/
+.nav-bar-container {
+    color: white;
+    height: 40px;
+    width: 1000px;
+    position: relative;
+    top: 50px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 3px;
+    overflow: hidden;
+    border: 1px solid rgb(153, 152, 152);
+    background-image: linear-gradient(to top, rgb(153, 152, 152) 0%, rgb(75, 73, 73) 51%, rgb(167, 164, 164) 100%);
+}
+
+.nav-bar-container button {
+    border: none;
+    border-right: 1px solid rgb(153, 152, 153);
+    outline: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    transition: 0.3s;
+    background-color: transparent; /*allows for the backgound image to be seen*/
+    color: white;
+    line-height: 32px; /*makes the borders on the right span from top to bottom*/
+    width: 100%;  /*make the button span the entire cell width so that the entire width of the cell is a hyperlink and the text is aligned center*/
+    height: 100%;  /*make the button span the entire cell height so that the entire height of the cell is a hyperlink and the text is aligned center*/
+   
+}
+
+.nav-bar-container li {
+    display: table-cell;  /*this together with the cell width attribute below makes the buttons span an equal width */
+    width: 12.5%;
+    text-align: center;
+}
+
+.nav-bar-container button:hover {
+    background-image: linear-gradient(to bottom, rgb(75, 73, 73) 50%, rgb(153, 152, 152) 100%);
+    text-decoration: underline;
+    text-decoration-color: white;
+    
+}
+
+#apple-logo{
+    height: 20px;
+    width: 20px;
+}
+
+.search-form-container {
+    margin: 5px;
+    border: 1px solid rgb(153, 152, 152);
+    border-radius: 10px;
+    width: 120px;
+    height: 20px;
+    text-align: left;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border: transparent;
+}
+
+.fa-search {
+    color: white;
+    padding: 2px;
+    outline: transparent;
+}
+/*end of nav bar*/
+/*content area*/
+.content {
+    text-align: center;
+    margin: 100px 0px;
+    line-height: 30px;
+}
+
+h1 {
+    font-size: 60px;
+    font-stretch: 100%;
+    font-weight: 100;
+    line-height: 60px;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 30px;
+    font-stretch: 100%;
+    font-weight: 100;
+    line-height: 60px;
+}
+
+h3 {
+    font-size: 24px;
+    font-stretch: 100%;
+    font-weight: 100;
+    line-height: 60px;
+}
+/*multiple images area*/
+h4 {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.phrase {
+    font-size: 12px;
+}
+
+.row {
+    margin-top: 5px;
+}
+
+.column-one, .column-two, .column-three, .column-four {
+    display: table-cell;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    
+}
+
+.column-one {
+    background-image: url(../images/rainbow.png);
+    background-position: center;
+    background-size: cover;
+    margin: 5px;
+    color: black;
+}
+
+.column-two {
+    background-image: url(../images/david.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.column-three {
+    background-image: url(../images/anniversary.png);
+    background-position: center;
+    background-size: cover;
+    color: black;
+}
+
+.column-four{
+    background-image: url(../images/freestocks.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+/*footer area*/
+.footer {
+    box-sizing: border-box;
+    font-size: 10px;
+    font-weight: 400;
+    color: rgb(110, 110, 110);
+    height: 70px;
+    width: 100%;
+    margin-top: 20px;
+    line-height: 10px;  
+}
+
+.footer ul {
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text {
+    margin-right: 100px;
+    margin-left: 150px;
+}
+
+.footer li {
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 10px;
+}
+
+.footer a{
+    color: rgb(0, 136, 204);
+}
+
+.explore {
+    border-left: 1px solid rgb(204, 204, 204);
+}
+
+#usa-logo {
+    width: 10px;
+    height: 10px;
+}
+
+.copyright {
+    margin-left: 150px;
+}
+ .privacy {
+     padding-left: 5px;
+     border-left: 1px solid rgb(204, 204, 204);
+ }
+
